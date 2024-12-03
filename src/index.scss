@@ -1,0 +1,57 @@
+// COLORS:
+$White: hsl(0, 0%, 100%);
+
+$Stone-100: hsl(30, 54%, 90%);
+$Stone-150: hsl(30, 18%, 87%);
+$Stone-600: hsl(30, 10%, 34%);
+$Stone-900: hsl(24, 5%, 18%);
+
+$Brown-800: hsl(14, 45%, 36%);
+
+$Rose-800: hsl(332, 51%, 32%);
+$Rose-50: hsl(330, 100%, 98%);
+
+// FONTS:
+// outfit: (https://fonts.google.com/specimen/Outfit)
+// young serif: (https://fonts.google.com/specimen/Young+Serif)
+$Family-YS: "Young Serif", serif;
+$Family-O: "Outfit", sans-serif;
+
+$Weight-400: 400;
+$Weight-600: 600;
+$Weight-700: 700;
+
+$Font-size-p: 16px;
+
+// SCREEN:
+$Mobile: 375px;
+$Desktop: 1440px;
+
+html,
+body {
+    font-family: $Family-O;
+    font-weight: $Weight-400;
+    font-size: $Font-size-p;
+    background-color: $White;
+}
+
+h1{
+    font-family: $Family-YS;
+    &h2{
+        color: $Brown-800;
+    }
+    &h3{
+        color: $Rose-800;
+    }
+}
+
+@media (min-width:$Desktop) {
+
+    html,
+    body {
+        font-family: $Family-O;
+        font-weight: $Weight-400;
+        font-size: $Font-size-p;
+        background-color: $Stone-100;
+    }
+}
