@@ -31,39 +31,100 @@ html,
 body {
     font-family: $Family-O;
     font-weight: $Weight-400;
-    font-size: $Font-size-p;
     background-color: $White;
+    color: $Stone-900;
     margin: 0;
     padding: 0;
 }
 
-main{
+main {
     text-align: left;
     color: $Stone-900;
 }
 
+article {
+    padding: 10%;
+}
+
 img {
     display: block;
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
 }
 
-
-a{
-    text-decoration: none;
-    color: $Stone-900;
-}
-
-
-h1{
+h1,
+h2,
+h3 {
     font-family: $Family-YS;
-    &h2{
-        color: $Brown-800;
-    }
-    &h3{
-        color: $Rose-800;
-    }
 }
+
+h2 {
+    color: $Brown-800;
+}
+
+h3 {
+    color: $Rose-800;
+}
+
+p {
+    font-size: $Font-size-p;
+    color: $Stone-600;
+}
+
+hr{
+    margin: 35px 0;
+}
+
+table {
+    border-spacing: 0; 
+    border-collapse: collapse;
+}
+
+tr th, td{
+    padding: 10px 0;
+    border-bottom: solid 1px $Stone-150;
+}
+
+tr td{
+    color: $Brown-800;
+    font-weight: 600;
+}
+
+// CLASSES
+.bg-rose-50 {
+    background-color: $Rose-50;
+    border-radius: 15px;
+}
+
+.list-brown{
+    color: $Brown-800;
+}
+
+.list-rose{
+    color: $Rose-800;
+}
+
+.number-list{
+    list-style: decimal;
+}
+
+.list-none{
+    list-style: none;
+}
+
+.default-padding {
+    padding: 5% 10%;
+}
+
+.default-gap {
+    gap: 5px;
+}
+
+.bold {
+    color: $Stone-600;
+    font-weight: $Weight-700;
+}
+
 
 @media (min-width:$Desktop) {
 
@@ -75,12 +136,16 @@ h1{
         background-color: $Stone-100;
     }
 
-    main{
+    main {
         margin: 5% 25%;
         border-radius: 15px;
         padding: 5%;
         text-align: left;
         color: $Stone-900;
         background-color: $White;
+    }
+
+    article {
+        padding: 0;
     }
 }
