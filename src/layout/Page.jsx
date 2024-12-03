@@ -1,11 +1,10 @@
 import Recipe from "../components/recipe/Recipe";
 
-function Page() {
-    const omelette = 'src/assets/image-omelette.jpeg';
+function Page({imgUrl, imgAlt}) {
 
     return (
         <main>
-            <img src={omelette} alt="image-omelette.jpeg" />
+            <img src={imgUrl} alt={imgAlt} style={{borderRadius: "15px"}}/>
             <Recipe />
         </main>
     );
