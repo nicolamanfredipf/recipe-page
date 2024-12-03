@@ -33,7 +33,27 @@ body {
     font-weight: $Weight-400;
     font-size: $Font-size-p;
     background-color: $White;
+    margin: 0;
+    padding: 0;
 }
+
+main{
+    text-align: left;
+    color: $Stone-900;
+}
+
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+
+
+a{
+    text-decoration: none;
+    color: $Stone-900;
+}
+
 
 h1{
     font-family: $Family-YS;
@@ -53,5 +73,14 @@ h1{
         font-weight: $Weight-400;
         font-size: $Font-size-p;
         background-color: $Stone-100;
+    }
+
+    main{
+        margin: 5% 25%;
+        border-radius: 15px;
+        padding: 5%;
+        text-align: left;
+        color: $Stone-900;
+        background-color: $White;
     }
 }
